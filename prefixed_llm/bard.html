@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Electronics Inc.</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 50px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .hero img {
+            width: 50%;
+        }
+
+        .hero-text {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .products {
+            margin-bottom: 50px;
+        }
+
+        .products h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .product a {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact form {
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .contact label {
+            margin-bottom: 5px;
+        }
+
+        .contact input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LLM Electronics Inc.</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Computer parts showcase">
+            <div class="hero-text">
+                <h2>Build Your Dream PC</h2>
+                <p>Find everything you need at LLM Electronics. From top-of-the-line processors to powerful graphics cards, we have the parts to bring your PC vision to life.</p>
+                <button>Shop Now</button>
+            </div>
+        </section>
+        <section class="products">
+            <h3>Featured Products</h3>
+            <div class="product-grid">
+                <article class="product">
+                    <img src="images/cpu.jpg" alt="CPU">
+                    <h4>Processor</h4>
+                    <p>The heart of your computer. Choose from the latest Intel and AMD processors for ultimate performance.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <article class="product">
+                    <img src="images/gpu.jpg" alt="GPU">
+                    <h4>Graphics Card</h4>
+                    <p>Experience stunning visuals and smooth gameplay with our selection of high-performance graphics cards.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <article class="product">
+                    <img src="images/ram.jpg" alt="RAM">
+                    <h4>Memory (RAM)</h4>
+                    <p>Ensure seamless multitasking and fast loading times with our wide range of RAM capacities and speeds.</p>
+                    <a href="#">Learn More</a>
+                </article>
+            </div>
+        </section>
+        <section class="contact">
+            <h3>Stay Connected</h3>
+            <p>Sign up for our newsletter to receive exclusive deals, product updates, and PC building tips.</p>
+            <form id="contact-form">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <script>
+                // Simple form validation to prevent empty email submissions
+                const form = document.getElementById('contact-form');
+                form.addEventListener('submit', (event) => {
+                    const email = document.getElementById('email').value;
+                    if (email === '') {
+                        event.preventDefault();
+                        alert('Please enter your email address.');
+                    }
+                });
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> LLM Electronics Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Electronics Inc.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .form-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #333;
+        }
+
+        .form-group button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact Us</a>
+    </header>
+
+    <main>
+        <div class="product-card">
+            <img class="product-image" src="path-to-image.jpg" alt="Product Image">
+            <div class="product-details">
+                <h2>Product Name</h2>
+                <p>Description of the product goes here.</p>
+                <p>Price: $99.99</p>
+                <p>Add to cart</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="path-to-image2.jpg" alt="Product Image">
+            <div class="product-details">
+                <h2>Product Name</h2>
+                <p>Description of the product goes here.</p>
+                <p>Price: $149.99</p>
+                <p>Add to cart</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="path-to-image3.jpg" alt="Product Image">
+            <div class="product-details">
+                <h2>Product Name</h2>
+                <p>Description of the product goes here.</p>
+                <p>Price: $199.99</p>
+                <p>Add to cart</p>
+            </div>
+        </div>
+
+        <div class="form-header">Contact Us</div>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2022 LLM Electronics Inc. All rights reserved.
+    </footer>
+</body>
+</html>
